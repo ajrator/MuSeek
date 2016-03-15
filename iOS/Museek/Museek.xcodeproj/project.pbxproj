@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */; };
+		88EFD3751C98D5C800DB8F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3741C98D5C800DB8F0D /* ViewController.swift */; };
+		88EFD3781C98D5C800DB8F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3761C98D5C800DB8F0D /* Main.storyboard */; };
+		88EFD37A1C98D5C800DB8F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3791C98D5C800DB8F0D /* Assets.xcassets */; };
+		88EFD37D1C98D5C800DB8F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		88EFD36F1C98D5C800DB8F0D /* Museek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		88EFD3741C98D5C800DB8F0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88EFD3771C98D5C800DB8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		88EFD3791C98D5C800DB8F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88EFD37C1C98D5C800DB8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		88EFD37E1C98D5C800DB8F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88EFD36C1C98D5C800DB8F0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88EFD3661C98D5C800DB8F0D = {
+			isa = PBXGroup;
+			children = (
+				88EFD3711C98D5C800DB8F0D /* Museek */,
+				88EFD3701C98D5C800DB8F0D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88EFD3701C98D5C800DB8F0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88EFD36F1C98D5C800DB8F0D /* Museek.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88EFD3711C98D5C800DB8F0D /* Museek */ = {
+			isa = PBXGroup;
+			children = (
+				88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */,
+				88EFD3741C98D5C800DB8F0D /* ViewController.swift */,
+				88EFD3761C98D5C800DB8F0D /* Main.storyboard */,
+				88EFD3791C98D5C800DB8F0D /* Assets.xcassets */,
+				88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */,
+				88EFD37E1C98D5C800DB8F0D /* Info.plist */,
+			);
+			path = Museek;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88EFD36E1C98D5C800DB8F0D /* Museek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88EFD3811C98D5C800DB8F0D /* Build configuration list for PBXNativeTarget "Museek" */;
+			buildPhases = (
+				88EFD36B1C98D5C800DB8F0D /* Sources */,
+				88EFD36C1C98D5C800DB8F0D /* Frameworks */,
+				88EFD36D1C98D5C800DB8F0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Museek;
+			productName = Museek;
+			productReference = 88EFD36F1C98D5C800DB8F0D /* Museek.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88EFD3671C98D5C800DB8F0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Museek;
+				TargetAttributes = {
+					88EFD36E1C98D5C800DB8F0D = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 88EFD36A1C98D5C800DB8F0D /* Build configuration list for PBXProject "Museek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88EFD3661C98D5C800DB8F0D;
+			productRefGroup = 88EFD3701C98D5C800DB8F0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88EFD36E1C98D5C800DB8F0D /* Museek */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88EFD36D1C98D5C800DB8F0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88EFD37D1C98D5C800DB8F0D /* LaunchScreen.storyboard in Resources */,
+				88EFD37A1C98D5C800DB8F0D /* Assets.xcassets in Resources */,
+				88EFD3781C98D5C800DB8F0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88EFD36B1C98D5C800DB8F0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88EFD3751C98D5C800DB8F0D /* ViewController.swift in Sources */,
+				88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		88EFD3761C98D5C800DB8F0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88EFD3771C98D5C800DB8F0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				88EFD37C1C98D5C800DB8F0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		88EFD37F1C98D5C800DB8F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88EFD3801C98D5C800DB8F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88EFD3821C98D5C800DB8F0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Museek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = museek.Museek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		88EFD3831C98D5C800DB8F0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Museek/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = museek.Museek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88EFD36A1C98D5C800DB8F0D /* Build configuration list for PBXProject "Museek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EFD37F1C98D5C800DB8F0D /* Debug */,
+				88EFD3801C98D5C800DB8F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88EFD3811C98D5C800DB8F0D /* Build configuration list for PBXNativeTarget "Museek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88EFD3821C98D5C800DB8F0D /* Debug */,
+				88EFD3831C98D5C800DB8F0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88EFD3671C98D5C800DB8F0D /* Project object */;
+}
