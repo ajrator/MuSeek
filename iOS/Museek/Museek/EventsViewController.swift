@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ShowsViewController: UITableViewController {
+class EventsViewController: UITableViewController {
 
     enum Filter: Int {
         case Time = 0

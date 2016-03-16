@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ShowDetailViewController: UIViewController {
+class EventDetailViewController: UIViewController {
 
     
     @IBOutlet weak var eventNameLabel: UILabel!

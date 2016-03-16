@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
-        <!--Shows View Controller-->
+        <!--Events View Controller-->
         <scene sceneID="zHh-IC-d0w">
             <objects>
-                <tableViewController id="Qje-za-vav" customClass="ShowsViewController" customModule="Museek" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Qje-za-vav" customClass="EventsViewController" customModule="Museek" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" id="xdg-zu-H6D">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="1516" y="70"/>
         </scene>
-        <!--Show Detail View Controller-->
+        <!--Event Detail View Controller-->
         <scene sceneID="Wcg-7F-u6q">
             <objects>
-                <viewController id="KsD-FF-jxu" customClass="ShowDetailViewController" customModule="Museek" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KsD-FF-jxu" customClass="EventDetailViewController" customModule="Museek" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Ix-Wl-dn3"/>
                         <viewControllerLayoutGuide type="bottom" id="dPA-cZ-DIl"/>

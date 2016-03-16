@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */; };
-		88EFD3751C98D5C800DB8F0D /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3741C98D5C800DB8F0D /* ShowsViewController.swift */; };
+		88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */; };
 		88EFD3781C98D5C800DB8F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3761C98D5C800DB8F0D /* Main.storyboard */; };
 		88EFD37A1C98D5C800DB8F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3791C98D5C800DB8F0D /* Assets.xcassets */; };
 		88EFD37D1C98D5C800DB8F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 		88EFD38E1C98D9A500DB8F0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */; };
 		88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */; };
 		DED0DB976BA447D9D4186B6D /* Pods_Museek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */; };
-		FA8AF06C1C990E5E00D3DA4F /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */; };
+		FA8AF06C1C990E5E00D3DA4F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06B1C990E5E00D3DA4F /* EventDetailViewController.swift */; };
 		FA8AF06E1C9917C800D3DA4F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06D1C9917C800D3DA4F /* API.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,7 +38,7 @@
 		1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Museek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EFD36F1C98D5C800DB8F0D /* Museek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88EFD3741C98D5C800DB8F0D /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
+		88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		88EFD3771C98D5C800DB8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88EFD3791C98D5C800DB8F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88EFD37C1C98D5C800DB8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F780F8055413EC7881A7C4D5 /* Pods-Museek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Museek.release.xcconfig"; path = "Pods/Target Support Files/Pods-Museek/Pods-Museek.release.xcconfig"; sourceTree = "<group>"; };
 		F9A18E0A12ACF6984D06BC0F /* Pods-Museek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Museek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Museek/Pods-Museek.debug.xcconfig"; sourceTree = "<group>"; };
-		FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
+		FA8AF06B1C990E5E00D3DA4F /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		FA8AF06D1C9917C800D3DA4F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		FA8AF0721C991F0E00D3DA4F /* ModelRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelRocket.framework; path = Carthage/Build/iOS/ModelRocket.framework; sourceTree = "<group>"; };
@@ -121,9 +121,9 @@
 		88EFD3851C98D72500DB8F0D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				88EFD3741C98D5C800DB8F0D /* ShowsViewController.swift */,
+				88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */,
 				88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */,
-				FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */,
+				FA8AF06B1C990E5E00D3DA4F /* EventDetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -297,9 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				88EFD38A1C98D97100DB8F0D /* Model.swift in Sources */,
-				88EFD3751C98D5C800DB8F0D /* ShowsViewController.swift in Sources */,
+				88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */,
 				88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */,
-				FA8AF06C1C990E5E00D3DA4F /* ShowDetailViewController.swift in Sources */,
+				FA8AF06C1C990E5E00D3DA4F /* EventDetailViewController.swift in Sources */,
 				FA8AF06E1C9917C800D3DA4F /* API.swift in Sources */,
 				88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */,
 			);
