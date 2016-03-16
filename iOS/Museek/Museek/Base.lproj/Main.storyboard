@@ -81,33 +81,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NFF-G3-2jM">
-                                <rect key="frame" x="20" y="130" width="560" height="128"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NFF-G3-2jM">
+                                <rect key="frame" x="20" y="128.5" width="560" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="ycs-64-zxl"/>
                                 </constraints>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Band Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3f-zH-qKt">
-                                <rect key="frame" x="20" y="101" width="560" height="21"/>
+                                <rect key="frame" x="20" y="100" width="560" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3A2-D7-HQk">
-                                <rect key="frame" x="20" y="72" width="560" height="21"/>
+                                <rect key="frame" x="20" y="72" width="560" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceo-I1-Jhx">
-                                <rect key="frame" x="272" y="266" width="56" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceo-I1-Jhx">
+                                <rect key="frame" x="272" y="264" width="56" height="30"/>
                                 <state key="normal" title="Call Lyft"/>
                                 <connections>
                                     <action selector="requestLyft" destination="KsD-FF-jxu" eventType="touchUpInside" id="TPY-5K-1j3"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Event Description: blah blah blha" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-Qd-sDt">
-                                <rect key="frame" x="20" y="304" width="560" height="171"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Event Description: blah blah blha" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-Qd-sDt">
+                                <rect key="frame" x="20" y="302" width="560" height="241"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -129,6 +129,7 @@
                             <constraint firstItem="Ceo-I1-Jhx" firstAttribute="centerX" secondItem="WUV-5S-bx9" secondAttribute="centerX" id="lts-ov-d3Q"/>
                             <constraint firstItem="3A2-D7-HQk" firstAttribute="top" secondItem="2Ix-Wl-dn3" secondAttribute="bottom" constant="8" id="my8-c0-fd1"/>
                             <constraint firstAttribute="trailing" secondItem="dhG-Qd-sDt" secondAttribute="trailing" constant="20" id="ow2-Mp-9mq"/>
+                            <constraint firstItem="dPA-cZ-DIl" firstAttribute="top" secondItem="dhG-Qd-sDt" secondAttribute="bottom" constant="8" id="yIX-zz-fWe"/>
                         </constraints>
                     </view>
                     <connections>
