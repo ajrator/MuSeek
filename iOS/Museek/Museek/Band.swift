@@ -21,7 +21,7 @@ class Band: Model {
 
 extension Band: JSONTransformable {
     
-    class func fromJSON(json: JSON) -> Band? {
+    static func fromJSON(json: JSON) -> Band? {
         return Band(json: json)
     }
     
