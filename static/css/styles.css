@@ -1,0 +1,72 @@
+body {
+    /* Adapted from: startupstockphotos.com */
+    background: url(../imgs/concert.jpg) no-repeat center center fixed;
+}
+
+.content-container {}
+
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.button-group-container {
+    text-align: center;
+}
+
+.button-container {
+    padding-top: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h4 {
+    text-align: center;
+}
+
+#logo {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    opacity: 0.8;
+    font-family: 'Slabo 27px', serif;
+}
+
+.form-group {
+    text-align: left;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+button {
+    margin: 0 auto;
+}
+
+.footer-container {
+    text-align: center;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+} a:hover {
+    color: slategrey;
+    text-decoration: none;
+}
