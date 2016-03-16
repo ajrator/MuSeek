@@ -14,6 +14,12 @@
 		37F3451A1C998744009EBE76 /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F345161C998744009EBE76 /* image2.png */; };
 		37F3451B1C998744009EBE76 /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F345171C998744009EBE76 /* image1.png */; };
 		37F3451D1C998CDF009EBE76 /* LocalTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F3451C1C998CDF009EBE76 /* LocalTestData.swift */; };
+		37F3451F1C99AC8F009EBE76 /* flame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F3451E1C99AC8F009EBE76 /* flame@2x.png */; };
+		37F345211C99AC96009EBE76 /* flame.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F345201C99AC96009EBE76 /* flame.png */; };
+		37F345251C99AE0E009EBE76 /* Map.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F345221C99AE0E009EBE76 /* Map.png */; };
+		37F345271C99AE0E009EBE76 /* Map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F345241C99AE0E009EBE76 /* Map@2x.png */; };
+		37F345291C99B832009EBE76 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F345281C99B832009EBE76 /* LaunchViewController.swift */; };
+		37F345351C99C189009EBE76 /* launch_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F345341C99C189009EBE76 /* launch_bg.png */; };
 		889009EB1C993C5C004ADE06 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EA1C993C5C004ADE06 /* NSDate.swift */; };
 		889009ED1C993D02004ADE06 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EC1C993D02004ADE06 /* Event.swift */; };
 		889009EF1C993E9E004ADE06 /* BadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EE1C993E9E004ADE06 /* BadgeLabel.swift */; };
@@ -54,6 +60,13 @@
 		37F345161C998744009EBE76 /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
 		37F345171C998744009EBE76 /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
 		37F3451C1C998CDF009EBE76 /* LocalTestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalTestData.swift; sourceTree = "<group>"; };
+		37F3451E1C99AC8F009EBE76 /* flame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flame@2x.png"; sourceTree = "<group>"; };
+		37F345201C99AC96009EBE76 /* flame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flame.png; sourceTree = "<group>"; };
+		37F345221C99AE0E009EBE76 /* Map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Map.png; sourceTree = "<group>"; };
+		37F345241C99AE0E009EBE76 /* Map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map@2x.png"; sourceTree = "<group>"; };
+		37F345281C99B832009EBE76 /* LaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		37F3452D1C99BC46009EBE76 /* Prelo-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Prelo-SemiBold.otf"; sourceTree = "<group>"; };
+		37F345341C99C189009EBE76 /* launch_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_bg.png; sourceTree = "<group>"; };
 		889009EA1C993C5C004ADE06 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		889009EC1C993D02004ADE06 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		889009EE1C993E9E004ADE06 /* BadgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeLabel.swift; sourceTree = "<group>"; };
@@ -102,6 +115,14 @@
 			name = "Event Pictures";
 			sourceTree = "<group>";
 		};
+		37F3452C1C99BC26009EBE76 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				37F3452D1C99BC46009EBE76 /* Prelo-SemiBold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		3DDD5846FD5255D557CA842A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,8 +167,14 @@
 		88EFD3841C98D72300DB8F0D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37F3452C1C99BC26009EBE76 /* Fonts */,
 				37F345131C998733009EBE76 /* Event Pictures */,
 				FA637BA31C9961010031C3A3 /* Map Marker Filled-100-2.png */,
+				37F345341C99C189009EBE76 /* launch_bg.png */,
+				37F345221C99AE0E009EBE76 /* Map.png */,
+				37F345241C99AE0E009EBE76 /* Map@2x.png */,
+				37F345201C99AC96009EBE76 /* flame.png */,
+				37F3451E1C99AC8F009EBE76 /* flame@2x.png */,
 				37F3450F1C9984DE009EBE76 /* Microphone 2 Filled-25.png */,
 				88EFD37E1C98D5C800DB8F0D /* Info.plist */,
 			);
@@ -169,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */,
+				37F345281C99B832009EBE76 /* LaunchViewController.swift */,
 				88EFD3761C98D5C800DB8F0D /* Main.storyboard */,
 				889009EE1C993E9E004ADE06 /* BadgeLabel.swift */,
 			);
@@ -276,15 +304,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F345251C99AE0E009EBE76 /* Map.png in Resources */,
 				37F345181C998744009EBE76 /* image4.png in Resources */,
+				37F345271C99AE0E009EBE76 /* Map@2x.png in Resources */,
 				37F345101C9984DE009EBE76 /* Microphone 2 Filled-25.png in Resources */,
 				37F3451A1C998744009EBE76 /* image2.png in Resources */,
 				37F3451B1C998744009EBE76 /* image1.png in Resources */,
+				37F3451F1C99AC8F009EBE76 /* flame@2x.png in Resources */,
 				88EFD37D1C98D5C800DB8F0D /* LaunchScreen.storyboard in Resources */,
 				88EFD37A1C98D5C800DB8F0D /* Assets.xcassets in Resources */,
+				37F345211C99AC96009EBE76 /* flame.png in Resources */,
 				88EFD3781C98D5C800DB8F0D /* Main.storyboard in Resources */,
 				37F345191C998744009EBE76 /* image3.png in Resources */,
 				FA637BA41C9961010031C3A3 /* Map Marker Filled-100-2.png in Resources */,
+				37F345351C99C189009EBE76 /* launch_bg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +383,7 @@
 				88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */,
 				88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */,
 				FA8AF06C1C990E5E00D3DA4F /* EventDetailViewController.swift in Sources */,
+				37F345291C99B832009EBE76 /* LaunchViewController.swift in Sources */,
 				889009EB1C993C5C004ADE06 /* NSDate.swift in Sources */,
 				FA8AF06E1C9917C800D3DA4F /* APIClient.swift in Sources */,
 				88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */,

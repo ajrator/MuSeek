@@ -78,13 +78,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lq5-mE-WfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2428" y="375"/>
+            <point key="canvasLocation" x="3240" y="375"/>
         </scene>
-        <!--Shows-->
+        <!--Popular-->
         <scene sceneID="ApR-rS-uzw">
             <objects>
                 <navigationController id="esn-2c-3lT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Shows" image="Microphone 2 Filled-25.png" id="1zS-GJ-RQD"/>
+                    <tabBarItem key="tabBarItem" title="Popular" image="flame.png" id="1zS-GJ-RQD"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0np-vx-XQm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -131,7 +131,7 @@
             </objects>
             <point key="canvasLocation" x="1548" y="73"/>
         </scene>
-        <!--Map-->
+        <!--Map View Controller-->
         <scene sceneID="IXT-nN-h7a">
             <objects>
                 <viewController id="O4m-ek-xD2" customClass="MapViewController" customModule="Museek" customModuleProvider="target" sceneMemberID="viewController">
@@ -155,7 +155,6 @@
                             <constraint firstAttribute="bottom" secondItem="LS1-K8-e7l" secondAttribute="bottom" id="otK-xk-wPx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="Map Marker Filled-100-2.png" id="GTi-0U-PYj"/>
                     <navigationItem key="navigationItem" id="paC-PK-XGm"/>
                     <connections>
                         <outlet property="mapView" destination="LS1-K8-e7l" id="c3I-5f-qSQ"/>
@@ -164,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgP-Uk-ZGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="696" y="815"/>
+            <point key="canvasLocation" x="1548" y="809"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HJR-eN-EEv">
@@ -177,19 +176,38 @@
                     </tabBar>
                     <connections>
                         <segue destination="esn-2c-3lT" kind="relationship" relationship="viewControllers" id="Mya-Cj-2U4"/>
-                        <segue destination="O4m-ek-xD2" kind="relationship" relationship="viewControllers" id="vuY-m1-Ig3"/>
+                        <segue destination="qxa-pC-SGi" kind="relationship" relationship="viewControllers" id="vuY-m1-Ig3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hhd-Pr-WQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-124" y="492"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="BZQ-6s-BUc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qxa-pC-SGi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" image="Map.png" id="GTi-0U-PYj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OKO-K2-lv5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="O4m-ek-xD2" kind="relationship" relationship="rootViewController" id="VS3-ej-uJM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0wk-G2-W6E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="809"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Map Marker Filled-100-2.png" width="25" height="25"/>
-        <image name="Microphone 2 Filled-25.png" width="25" height="25"/>
+        <image name="Map.png" width="21" height="29"/>
+        <image name="flame.png" width="20" height="28"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qBW-7t-Hkp"/>
+        <segue reference="vNv-2Q-ETW"/>
     </inferredMetricsTieBreakers>
 </document>

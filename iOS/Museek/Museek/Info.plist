@@ -24,6 +24,10 @@
 	<array>
 		<string>lyft</string>
 	</array>
+    <key>Fonts provided by application</key>
+    <array>
+        <string>Prelo-SemiBold.otf</string>
+    </array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>

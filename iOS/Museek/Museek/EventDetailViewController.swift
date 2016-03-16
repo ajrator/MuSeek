@@ -31,7 +31,6 @@ class EventDetailViewController: UIViewController {
         }
     }
     
-    
 
     var event: Event? {
         didSet {
@@ -40,6 +39,7 @@ class EventDetailViewController: UIViewController {
         }
     }
 
+    //Need to change lat and long
     @IBAction func requestLyft() {
         let application = UIApplication.sharedApplication()
         let lyftAppURL = NSURL(string: "lyft://ridetype?id=&destination[latitude]=\(0)&destination[longitude]=\(0)")!
@@ -56,27 +56,20 @@ class EventDetailViewController: UIViewController {
     override func viewDidLoad() {
         print(eventIndex)
         bandNameLabel.text = localData.bandNames[eventIndex]
-        eventNameLabel.text = localData.locationNames[eventIndex]
+        eventNameLabel.text = "Location: " + localData.locationNames[eventIndex]
         eventDescriptionLabel.text = localData.eventDescriptions[eventIndex]
         
         locationManager.delegate = self
         handleAuthorizationStatus(CLLocationManager.authorizationStatus())
         
         // Drop a pin
-        let newYorkLocation = CLLocationCoordinate2DMake(30.2500,-97.7500)
-
         let dropPin = MKPointAnnotation()
-        dropPin.coordinate = newYorkLocation
-        dropPin.title = localData.bandNames[eventIndex]
+        dropPin.coordinate = CLLocationCoordinate2DMake(localData.eventLat[eventIndex],localData.eventLong[eventIndex])
+        dropPin.title = localData.locationNames[eventIndex]
         mapView.addAnnotation(dropPin)
         
         //Show annotation
         mapView.selectAnnotation(mapView.annotations[0], animated: true)
-        
-        currentLocation = locationManager.location
-        
-        print(currentLocation?.coordinate.longitude)
-        print(currentLocation?.coordinate.latitude)
 }
     
     private func handleAuthorizationStatus(status: CLAuthorizationStatus) {
@@ -114,7 +107,7 @@ extension EventDetailViewController: CLLocationManagerDelegate {
         let coordinate: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         let region: MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
         
-        mapView.setRegion(region, animated: true)
+        mapView.setRegion(region, animated: false)
         
     }
     

@@ -20,10 +20,11 @@ class MapViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 20)!]
+        self.title = "MuSeek"
+        
         locationManager.delegate = self
         handleAuthorizationStatus(CLLocationManager.authorizationStatus())
-        
-        
         
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "reloadData", userInfo: nil, repeats: true)
         timer?.fire()
@@ -82,7 +83,7 @@ extension MapViewController: CLLocationManagerDelegate {
         let coordinate: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         let region: MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
         
-        mapView.setRegion(region, animated: true)
+        mapView.setRegion(region, animated: false)
         
     }
     
