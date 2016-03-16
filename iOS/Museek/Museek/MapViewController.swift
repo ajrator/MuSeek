@@ -21,13 +21,27 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 20)!]
-        self.title = "MuSeek"
+        self.title = "Map"
         
         locationManager.delegate = self
         handleAuthorizationStatus(CLLocationManager.authorizationStatus())
         
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "reloadData", userInfo: nil, repeats: true)
         timer?.fire()
+        
+        addPins()
+    }
+    
+    func addPins() {
+        for(var index = 0; index < 4; index++){
+            let dropPin = MKPointAnnotation()
+            dropPin.coordinate = CLLocationCoordinate2DMake(localData.eventLat[index],localData.eventLong[index])
+            dropPin.title = localData.locationNames[index]
+            mapView.addAnnotation(dropPin)
+            
+            //Show annotation
+            mapView.selectAnnotation(mapView.annotations[index], animated: true)
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

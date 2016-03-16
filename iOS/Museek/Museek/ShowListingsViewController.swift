@@ -18,7 +18,9 @@ class ShowListingsViewController: UIViewController{
         super.viewDidLoad()
         
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Helvetica Neue", size: 20)!]
-        self.title = "MuSeek"
+        self.title = "Popular"
+        
+        self.tabBarController?.tabBar.items![0].title = "Popular"
         
         let screenSize: CGRect = UIScreen.mainScreen().bounds
         let myImages = ["image1.png","image2.png","image3.png","image4.png"]

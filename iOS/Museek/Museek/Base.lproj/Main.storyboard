@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-1p-Xz5">
-                                <rect key="frame" x="20" y="82" width="560" height="440.5"/>
+                                <rect key="frame" x="20" y="82" width="560" height="380.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother of Dragons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYV-FE-K47">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="21.5"/>
@@ -39,13 +39,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-Tg-c7F">
-                                        <rect key="frame" x="0.0" y="84.5" width="560" height="300"/>
+                                        <rect key="frame" x="0.0" y="84.5" width="560" height="240"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="agc-sW-rGi"/>
+                                            <constraint firstAttribute="height" constant="240" id="agc-sW-rGi"/>
                                         </constraints>
                                     </mapView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIg-6c-NE9">
-                                        <rect key="frame" x="0.0" y="392.5" width="560" height="48"/>
+                                        <rect key="frame" x="0.0" y="332.5" width="560" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="tPJ-NT-t1g"/>
                                         </constraints>

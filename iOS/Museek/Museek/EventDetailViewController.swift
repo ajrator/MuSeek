@@ -16,7 +16,6 @@ class EventDetailViewController: UIViewController {
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
     
-    
     @IBOutlet weak var bandNameLabel: UILabel!
     @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var eventDescriptionLabel: UILabel!
@@ -42,7 +41,7 @@ class EventDetailViewController: UIViewController {
     //Need to change lat and long
     @IBAction func requestLyft() {
         let application = UIApplication.sharedApplication()
-        let lyftAppURL = NSURL(string: "lyft://ridetype?id=&destination[latitude]=\(0)&destination[longitude]=\(0)")!
+        let lyftAppURL = NSURL(string: "lyft://ridetype?id=&destination[latitude]=\(localData.eventLat[eventIndex])&destination[longitude]=\(localData.eventLong[eventIndex])")!
         
         if application.canOpenURL(lyftAppURL) {
             application.openURL(lyftAppURL)
@@ -107,7 +106,7 @@ extension EventDetailViewController: CLLocationManagerDelegate {
         let coordinate: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
         let region: MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
         
-        mapView.setRegion(region, animated: false)
+        mapView.setRegion(region, animated: true)
         
     }
     
