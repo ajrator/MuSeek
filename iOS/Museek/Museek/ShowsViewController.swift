@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreLocation
 
 class ShowsViewController: UITableViewController {
 
@@ -16,7 +16,6 @@ class ShowsViewController: UITableViewController {
         case Distance = 1
     }
     
-    var shows = [Show]()
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
@@ -26,7 +25,10 @@ class ShowsViewController: UITableViewController {
     }
  
     private func reloadData(filter: Filter) {
-        
+        let client = APIClient.sharedClient
+        client.fetchEvents(location: CLLocation()) { events in
+            
+        }
     }
     
     override func viewDidLoad() {
