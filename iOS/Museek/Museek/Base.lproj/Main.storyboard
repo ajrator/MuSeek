@@ -81,8 +81,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-1p-Xz5">
-                                <rect key="frame" x="0.0" y="64" width="600" height="220.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-1p-Xz5">
+                                <rect key="frame" x="0.0" y="64" width="600" height="252.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother of Dragons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYV-FE-K47">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="21.5"/>
@@ -91,25 +91,25 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farmhouse Rager AF 4.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he1-bS-K7c">
-                                        <rect key="frame" x="0.0" y="21" width="600" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="29" width="600" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYe-rt-VVE">
-                                        <rect key="frame" x="0.0" y="41" width="600" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="57" width="600" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-Tg-c7F">
-                                        <rect key="frame" x="0.0" y="60" width="600" height="128"/>
+                                        <rect key="frame" x="0.0" y="84.5" width="600" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="agc-sW-rGi"/>
                                         </constraints>
                                     </mapView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIg-6c-NE9">
-                                        <rect key="frame" x="0.0" y="188" width="600" height="32"/>
+                                        <rect key="frame" x="0.0" y="220" width="600" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Request Lyft">
                                             <color key="titleColor" red="0.91764705882352937" green="0.043137254901960784" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
