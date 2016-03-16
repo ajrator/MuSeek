@@ -1,74 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OmK-0p-8cV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OmK-0p-8cV">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Event-->
-        <scene sceneID="zHh-IC-d0w">
-            <objects>
-                <tableViewController title="Event" id="Qje-za-vav" customClass="EventsViewController" customModule="Museek" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" id="xdg-zu-H6D">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="showCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowCell" textLabel="44v-QJ-SaD" detailTextLabel="Wdw-SW-Wmu" style="IBUITableViewCellStyleSubtitle" id="RfT-u9-BHK">
-                                <rect key="frame" x="0.0" y="92" width="600" height="64"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RfT-u9-BHK" id="Iuf-0G-8Z5">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="63.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Mother of Dragons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="44v-QJ-SaD">
-                                            <rect key="frame" x="15" y="13" width="145" height="19.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wdw-SW-Wmu">
-                                            <rect key="frame" x="15" y="32.5" width="56" height="19.5"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="KsD-FF-jxu" kind="show" identifier="EventDetail" id="IgX-A7-mJa"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Qje-za-vav" id="Vmn-n2-okW"/>
-                            <outlet property="delegate" destination="Qje-za-vav" id="pgP-A4-cvP"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="dzZ-DB-qJ9">
-                        <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="3jT-7e-QJx">
-                            <rect key="frame" x="180" y="7" width="240" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <segments>
-                                <segment title="Time"/>
-                                <segment title="Distance"/>
-                            </segments>
-                            <connections>
-                                <action selector="filter:" destination="Qje-za-vav" eventType="valueChanged" id="KBg-6j-S3j"/>
-                            </connections>
-                        </segmentedControl>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="segmentedControl" destination="3jT-7e-QJx" id="oDq-6r-cXY"/>
-                    </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4eo-ji-DjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1516" y="70"/>
-        </scene>
         <!--Event-->
         <scene sceneID="Wcg-7F-u6q">
             <objects>
@@ -82,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-1p-Xz5">
-                                <rect key="frame" x="20" y="82" width="560" height="268.5"/>
+                                <rect key="frame" x="20" y="82" width="560" height="440.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother of Dragons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYV-FE-K47">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="21.5"/>
@@ -102,14 +38,14 @@
                                         <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-Tg-c7F">
-                                        <rect key="frame" x="0.0" y="84.5" width="560" height="128"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-Tg-c7F">
+                                        <rect key="frame" x="0.0" y="84.5" width="560" height="300"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="agc-sW-rGi"/>
+                                            <constraint firstAttribute="height" constant="300" id="agc-sW-rGi"/>
                                         </constraints>
                                     </mapView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIg-6c-NE9">
-                                        <rect key="frame" x="0.0" y="220.5" width="560" height="48"/>
+                                        <rect key="frame" x="0.0" y="392.5" width="560" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="tPJ-NT-t1g"/>
                                         </constraints>
@@ -154,12 +90,46 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Qje-za-vav" kind="relationship" relationship="rootViewController" id="mju-tx-mla"/>
+                        <segue destination="uGY-2b-Xql" kind="relationship" relationship="rootViewController" id="cBB-of-yDU"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIg-hr-YjB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="696" y="70"/>
+        </scene>
+        <!--Show Listings View Controller-->
+        <scene sceneID="j3M-sg-3Gb">
+            <objects>
+                <viewController id="uGY-2b-Xql" customClass="ShowListingsViewController" customModule="Museek" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rPf-x6-30d"/>
+                        <viewControllerLayoutGuide type="bottom" id="CZa-yH-XNq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XM1-ff-6Te">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2du-CP-P1A">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2du-CP-P1A" firstAttribute="top" secondItem="XM1-ff-6Te" secondAttribute="top" id="Pvv-1s-WP8"/>
+                            <constraint firstItem="2du-CP-P1A" firstAttribute="leading" secondItem="XM1-ff-6Te" secondAttribute="leading" id="Xyi-FX-Maa"/>
+                            <constraint firstAttribute="bottom" secondItem="2du-CP-P1A" secondAttribute="bottom" id="ff7-xT-fKd"/>
+                            <constraint firstAttribute="trailing" secondItem="2du-CP-P1A" secondAttribute="trailing" id="oyt-eb-vdn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="IdD-Un-YRP"/>
+                    <connections>
+                        <outlet property="EventsScrollView" destination="2du-CP-P1A" id="NVF-Ny-f2a"/>
+                        <segue destination="KsD-FF-jxu" kind="show" identifier="showEventDetails" id="qBW-7t-Hkp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1L-7g-xwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="73"/>
         </scene>
         <!--Map-->
         <scene sceneID="IXT-nN-h7a">
@@ -185,7 +155,7 @@
                             <constraint firstAttribute="bottom" secondItem="LS1-K8-e7l" secondAttribute="bottom" id="otK-xk-wPx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="map25.png" id="GTi-0U-PYj"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="Map Marker Filled-100-2.png" id="GTi-0U-PYj"/>
                     <navigationItem key="navigationItem" id="paC-PK-XGm"/>
                     <connections>
                         <outlet property="mapView" destination="LS1-K8-e7l" id="c3I-5f-qSQ"/>
@@ -216,10 +186,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Map Marker Filled-100-2.png" width="25" height="25"/>
         <image name="Microphone 2 Filled-25.png" width="25" height="25"/>
-        <image name="map25.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IgX-A7-mJa"/>
+        <segue reference="qBW-7t-Hkp"/>
     </inferredMetricsTieBreakers>
 </document>
