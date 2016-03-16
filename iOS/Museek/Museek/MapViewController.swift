@@ -23,7 +23,7 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         handleAuthorizationStatus(CLLocationManager.authorizationStatus())
         
-       
+        
         
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "reloadData", userInfo: nil, repeats: true)
         timer?.fire()
@@ -68,7 +68,21 @@ extension MapViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        currentLocation = locations.last
+        //currentLocation = locations.last
+        
+        let userLocation: CLLocation = locations[0]
+        
+        let latitude = userLocation.coordinate.latitude
+        let longitude = userLocation.coordinate.longitude
+        
+        let latDelta: CLLocationDegrees = 0.075
+        let longDelta: CLLocationDegrees = 0.075
+        let span: MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
+        
+        let coordinate: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+        let region: MKCoordinateRegion = MKCoordinateRegionMake(coordinate, span)
+        
+        mapView.setRegion(region, animated: true)
         
     }
     

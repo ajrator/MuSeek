@@ -24,8 +24,8 @@ class EventDetailViewController: UIViewController {
             lyftButton.layer.cornerRadius = 8
         }
     }
-
     
+
     var event: Event? {
         didSet {
             eventNameLabel.text = event?.name.value
