@@ -14,8 +14,7 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var bandNameLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var lyftButton: UIButton!
-    @IBOutlet weak var eventTextView: UITextView!
+    @IBOutlet weak var eventDescriptionLabel: UILabel!
     
     var event: Event? {
         didSet {
