@@ -1,0 +1,16 @@
+##############################
+#Author: Maximilian R.
+#Email: maximus12793@gmail.com
+#Updated: 2016-Mar-15 18:18:22 
+##############################
+
+
+DNS:
+
+1) we need a way to have user click button and request a ride, processed by rides.py
+
+
+
+2) speech to text -> text to personality
+<magic bs>
+generate a playlist
