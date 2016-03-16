@@ -36,6 +36,13 @@ class EventsViewController: UITableViewController {
         reloadData(.Time)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "EventDetail" {
+            let eventDetailViewController = segue.destinationViewController as! EventDetailViewController
+            eventDetailViewController.event = sender as? Event
+        }
+    }
+    
     // MARK: - UITableViewDataSource
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

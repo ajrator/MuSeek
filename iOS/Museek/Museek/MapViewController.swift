@@ -25,6 +25,13 @@ class MapViewController: UIViewController {
         reloadData()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "EventDetail" {
+            let eventDetailViewController = segue.destinationViewController as! EventDetailViewController
+            eventDetailViewController.event = sender as? Event
+        }
+    }
+    
     private func reloadData() {
         guard let location = currentLocation else { return }
         APIClient.sharedClient.fetchEvents(location: location) { events in
@@ -57,6 +64,14 @@ extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.last
+    }
+    
+}
+
+extension MapViewController: MKMapViewDelegate {
+    
+    func mapView(mapView: MKMapView, didSelectAnnotationView view: MKAnnotationView) {
+        performSegueWithIdentifier("EventDetail", sender: view.annotation)
     }
     
 }

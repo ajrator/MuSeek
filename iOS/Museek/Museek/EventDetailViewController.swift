@@ -18,7 +18,7 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var lyftButton: UIButton!
     @IBOutlet weak var eventTextView: UITextView!
     
-    
+    var event: Event?
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -38,7 +38,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="KsD-FF-jxu" kind="show" identifier="ShowDetail" id="IgX-A7-mJa"/>
+                                    <segue destination="KsD-FF-jxu" kind="show" identifier="EventDetail" id="IgX-A7-mJa"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -142,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lq5-mE-WfE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="61"/>
+            <point key="canvasLocation" x="2428" y="375"/>
         </scene>
         <!--Shows-->
         <scene sceneID="ApR-rS-uzw">
@@ -189,6 +189,7 @@
                     <navigationItem key="navigationItem" id="paC-PK-XGm"/>
                     <connections>
                         <outlet property="mapView" destination="LS1-K8-e7l" id="c3I-5f-qSQ"/>
+                        <segue destination="KsD-FF-jxu" kind="show" identifier="EventDetail" id="vNv-2Q-ETW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgP-Uk-ZGc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,4 +215,7 @@
             <point key="canvasLocation" x="-124" y="492"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="vNv-2Q-ETW"/>
+    </inferredMetricsTieBreakers>
 </document>
