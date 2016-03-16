@@ -14,7 +14,7 @@
 			startTime: this.startTime.value,
 			endTime: this.endTime.value,
 			eventUrl: this.eventUrl.value,
-			bandId: Stores.bands[0].id
+			bandId: Stores.currentBand.id
 		}
 		console.log("Event Added");
 		console.log(payload);
