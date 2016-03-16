@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="showCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowCell" textLabel="44v-QJ-SaD" detailTextLabel="Wdw-SW-Wmu" style="IBUITableViewCellStyleSubtitle" id="RfT-u9-BHK" customClass="ShowTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="showCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ShowCell" textLabel="44v-QJ-SaD" detailTextLabel="Wdw-SW-Wmu" style="IBUITableViewCellStyleSubtitle" id="RfT-u9-BHK">
                                 <rect key="frame" x="0.0" y="92" width="600" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RfT-u9-BHK" id="Iuf-0G-8Z5">
@@ -216,6 +216,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vNv-2Q-ETW"/>
+        <segue reference="IgX-A7-mJa"/>
     </inferredMetricsTieBreakers>
 </document>
