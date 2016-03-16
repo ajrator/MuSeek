@@ -20,6 +20,8 @@
 		FA8AF06E1C9917C800D3DA4F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06D1C9917C800D3DA4F /* API.swift */; };
 		FA8AF0701C991A2200D3DA4F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */; };
 		FA8AF0711C991A2200D3DA4F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FA8AF0731C991F0E00D3DA4F /* ModelRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AF0721C991F0E00D3DA4F /* ModelRocket.framework */; };
+		FA8AF0741C991F0E00D3DA4F /* ModelRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AF0721C991F0E00D3DA4F /* ModelRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +31,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FA8AF0741C991F0E00D3DA4F /* ModelRocket.framework in Embed Frameworks */,
 				FA8AF0711C991A2200D3DA4F /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -51,6 +54,7 @@
 		FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
 		FA8AF06D1C9917C800D3DA4F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		FA8AF0721C991F0E00D3DA4F /* ModelRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelRocket.framework; path = Carthage/Build/iOS/ModelRocket.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			files = (
 				88EFD38E1C98D9A500DB8F0D /* CoreLocation.framework in Frameworks */,
 				FA8AF0701C991A2200D3DA4F /* Alamofire.framework in Frameworks */,
+				FA8AF0731C991F0E00D3DA4F /* ModelRocket.framework in Frameworks */,
 				88EFD38C1C98D9A000DB8F0D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,6 +149,7 @@
 		88EFD3911C98DA1F00DB8F0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA8AF0721C991F0E00D3DA4F /* ModelRocket.framework */,
 				FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */,
 				88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */,
 				88EFD38B1C98D9A000DB8F0D /* MapKit.framework */,
