@@ -102,6 +102,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ceo-I1-Jhx">
                                 <rect key="frame" x="272" y="266" width="56" height="30"/>
                                 <state key="normal" title="Call Lyft"/>
+                                <connections>
+                                    <action selector="requestLyft" destination="KsD-FF-jxu" eventType="touchUpInside" id="TPY-5K-1j3"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Event Description: blah blah blha" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-Qd-sDt">
                                 <rect key="frame" x="20" y="304" width="560" height="171"/>
@@ -132,7 +135,7 @@
                         <outlet property="bandNameLabel" destination="l3f-zH-qKt" id="aX8-k9-Nr2"/>
                         <outlet property="eventNameLabel" destination="3A2-D7-HQk" id="tXj-Nk-tW0"/>
                         <outlet property="eventTextView" destination="dhG-Qd-sDt" id="F3D-U0-sWW"/>
-                        <outlet property="lyftButton" destination="Ceo-I1-Jhx" id="T4N-ni-1ja"/>
+                        <outlet property="lyftButton" destination="Ceo-I1-Jhx" id="h5H-zy-7p9"/>
                         <outlet property="mapView" destination="NFF-G3-2jM" id="ias-fp-ccG"/>
                     </connections>
                 </viewController>
