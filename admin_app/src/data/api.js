@@ -1,14 +1,8 @@
 /* Javascript API Client for MuSeek app*/
 
-export default class Api{
-  constructor(root){
-    if (!root){
-      throw new TypeError('Root URL is not defined');
-    }
-    this.rootUrl = root;
-  }
-  
-  buildRequest(body){
+var Api = (function(){
+  var api = {};
+  api.buildRequest = function (body){
     return {
 	  'method': 'POST',
 	  'body': JSON.stringify(body),
@@ -17,9 +11,9 @@ export default class Api{
   /*
    * Do a fetch request useing the wg fetch polyfill and ajax lib
    * */
-  fetch(url, body){
-	 var readOptions = this.buildRequest(body);
-	}
+  api.fetch(url, body){
+    var readOptions = this.buildRequest(body);
+  };
 
   }
   /* Create a new Band Record 
@@ -27,7 +21,7 @@ export default class Api{
    * @param {string} bandImageUrl Image for the Bands profile
    * @return {promise} The Promise returned by Fetch ajax call
    */
-	createBand(bandName, bandImageUrl){
+  api.createBand(bandName, bandImageUrl){
 		var url = '/bands';
 		var payload = {
 			'data': {

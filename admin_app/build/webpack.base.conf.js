@@ -1,4 +1,5 @@
 var path = require('path')
+var webpack = require('webpack')
 
 module.exports = {
   entry: {
@@ -9,6 +10,9 @@ module.exports = {
     publicPath: '/static/',
     filename: '[name].js'
   },
+  plugins: [
+    new webpack.ProvidePlugin({riot: 'riot'})
+  ],
   resolve: {
     extensions: ['', '.js', '.vue'],
     alias: {
@@ -19,6 +23,9 @@ module.exports = {
     root: path.join(__dirname, 'node_modules')
   },
   module: {
+    preLoaders:[
+      {test: /\.tag$/, exclude: /node_modules/, loader: "riotjs-loader", query: {type:'none'}}
+    ],
     loaders: [
       {
         test: /\.vue$/,
