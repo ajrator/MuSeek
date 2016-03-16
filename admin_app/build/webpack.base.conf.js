@@ -35,20 +35,17 @@ module.exports = {
       },
       {
         test: /\.(jpg|jpeg|gif|png|ico|svg)$/,
-        include: [
-          path.resolve(__dirname, '../src/assets')
-        ],
         loader:'file-loader?name=[path][name].[ext]&context=src'
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/,
+        include: [
+          path.resolve(__dirname, '../src/static')
+        ],
         loaders: ['style', 'css', 'sass']
       },
       {
         test   : /\.(png|ttf|eot|svg|woff(2)?)(\?[-a-z0-9]+)?$/,
-        include: [
-          /dg-theme/
-        ],
         loader : 'file-loader'
       }
     ]
