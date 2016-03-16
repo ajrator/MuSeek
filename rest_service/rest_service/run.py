@@ -5,7 +5,6 @@ import rides
 
 CLIENT_ID = '82uAvOdn6kpD'
 CLIENT_SECRET = '2Xju8uFKHrqn4AaSamlcCExeQXMoVjlA'
-# REDIRECT_URI = "http://localhost:65010/reddit_callback"
 
 from flask import Flask
 app = Flask(__name__)
@@ -14,7 +13,6 @@ app = Flask(__name__)
 @app.route('/api/eta')
 def eta():
     return rides.main()
-
 
 @app.route('/')
 def homepage():
@@ -29,13 +27,11 @@ def make_authorization_url():
     save_created_state(state)
     params = {
               "grant_type"
-              
+
               "scope": "public"}
     url = "https://api.lyft.com/oauth/token" + urllib.urlencode(params)
     return url
 
-# Left as an exercise to the reader.
-# You may want to stoimport requests
 import requests.auth
 def get_token(code):
     client_auth = requests.auth.HTTPBasicAuth(CLIENT_ID, CLIENT_SECRET)
@@ -46,34 +42,14 @@ def get_token(code):
                              auth=client_auth,
                              data=post_data)
     token_json = response.json()
-    return token_json["access_token"] #re valid states in a database or memcache,
-# or perhaps cryptographically sign them and verify upon retrieval.
+    return token_json["access_token"]
+
 def save_created_state(state):
     pass
+
 def is_valid_state(state):
     return True
 
-# auth = request.auth.
-
-
-# auth = requests.authhtttbasicauuth (client{id}, secret)
-
-
-# response= request.post(
-    # localhost+/oauth/token
-    # auth=auth ^above
-    # headers = application/jason
-    # data=json.dumps({
-        # grant type, client cridentals
-        # scope: public })
-# )
-
-
-# save response.json['access_token']
-
-# ^this is header for next request
-#
-# headers ("ahthorization: bearrer{}".format(((access_token))
-    
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host='0.0.0.0', port=8000)
+

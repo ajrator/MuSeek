@@ -9,7 +9,7 @@ app.logger.setLevel(logging.ERROR)
 
 @app.route('/')
 def index():
-    return send_from_directory('dist', 'index.html')
+    return send_from_directory('.', 'index.html')
 
 
 if __name__ == '__main__':
