@@ -28,7 +28,15 @@ class EventsViewController: UITableViewController {
     private func reloadData(filter: Filter) {
         let client = APIClient.sharedClient
         client.fetchEvents(location: CLLocation()) { events in
-            self.events = events
+            self.events = events.sort { a, b in
+                switch filter {
+                case .Time:
+                    return a.date.value! < b.date.value!
+                case .Distance:
+                    // FIXME: This should compare distance not time
+                    return a.date.value! < b.date.value!
+                }
+            }
         }
     }
     
