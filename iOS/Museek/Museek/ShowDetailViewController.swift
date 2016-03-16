@@ -42,7 +42,7 @@ class ShowDetailViewController: UIViewController {
             myApp.openURL(lyftAppURL)
         } else {
             // Lyft not installed; open App Store
-            let lyftAppStoreURL = NSURL(string: "https://itunes.apple.com/us/app/lyft-taxi-bus-app-alternative/id529379082")!
+            let lyftAppStoreURL = NSURL(string: "https://itunes.apple.com/us/app/lyft-on-demand-ridesharing/id529379082?mt=8")!
             myApp.openURL(lyftAppStoreURL)
         }
     }
