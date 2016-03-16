@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		889009EB1C993C5C004ADE06 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EA1C993C5C004ADE06 /* NSDate.swift */; };
+		889009ED1C993D02004ADE06 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EC1C993D02004ADE06 /* Event.swift */; };
 		88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */; };
 		88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */; };
 		88EFD3781C98D5C800DB8F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3761C98D5C800DB8F0D /* Main.storyboard */; };
 		88EFD37A1C98D5C800DB8F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3791C98D5C800DB8F0D /* Assets.xcassets */; };
 		88EFD37D1C98D5C800DB8F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */; };
-		88EFD38A1C98D97100DB8F0D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3891C98D97100DB8F0D /* Model.swift */; };
+		88EFD38A1C98D97100DB8F0D /* Band.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3891C98D97100DB8F0D /* Band.swift */; };
 		88EFD38C1C98D9A000DB8F0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38B1C98D9A000DB8F0D /* MapKit.framework */; };
 		88EFD38E1C98D9A500DB8F0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */; };
 		88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Museek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		889009EA1C993C5C004ADE06 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		889009EC1C993D02004ADE06 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		88EFD36F1C98D5C800DB8F0D /* Museek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		88EFD3791C98D5C800DB8F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88EFD37C1C98D5C800DB8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88EFD37E1C98D5C800DB8F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88EFD3891C98D97100DB8F0D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		88EFD3891C98D97100DB8F0D /* Band.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Band.swift; sourceTree = "<group>"; };
 		88EFD38B1C98D9A000DB8F0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +144,8 @@
 		88EFD3871C98D72700DB8F0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				88EFD3891C98D97100DB8F0D /* Model.swift */,
+				88EFD3891C98D97100DB8F0D /* Band.swift */,
+				889009EC1C993D02004ADE06 /* Event.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -299,7 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88EFD38A1C98D97100DB8F0D /* Model.swift in Sources */,
+				889009ED1C993D02004ADE06 /* Event.swift in Sources */,
+				88EFD38A1C98D97100DB8F0D /* Band.swift in Sources */,
 				88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */,
 				88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */,
 				FA8AF06C1C990E5E00D3DA4F /* EventDetailViewController.swift in Sources */,
