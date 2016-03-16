@@ -16,6 +16,7 @@ class EventsViewController: UITableViewController {
         case Distance = 1
     }
     
+    var events = [Event]()
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
@@ -27,7 +28,7 @@ class EventsViewController: UITableViewController {
     private func reloadData(filter: Filter) {
         let client = APIClient.sharedClient
         client.fetchEvents(location: CLLocation()) { events in
-            
+            self.events = events
         }
     }
     
@@ -39,27 +40,25 @@ class EventsViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "EventDetail" {
             let eventDetailViewController = segue.destinationViewController as! EventDetailViewController
-            eventDetailViewController.event = sender as? Event
+            eventDetailViewController.event = events[tableView.indexPathForSelectedRow!.row]
         }
     }
     
     // MARK: - UITableViewDataSource
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCellWithIdentifier("ShowCell", forIndexPath: indexPath)
         
-        cell.textLabel?.text = "hi"
-        cell.detailTextLabel?.text = "Hello"
+        let event = events[indexPath.row]
         
+        cell.textLabel?.text = event.band.value?.name.value
+        cell.detailTextLabel?.text = "9.8 mi – Rock, metal"
+
         return cell
     }
-    
-    
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return events.count
     }
     
-    
 }
-
