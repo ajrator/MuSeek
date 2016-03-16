@@ -36,6 +36,7 @@ SAMPLE_PAYLOADS = [
 def test_api():
     """Check if the API is on.
     """
+    r = requests.get('http://localhost:8000/clear')
     r = requests.get('http://localhost:8000')
     assert r.status_code==200
 
@@ -71,7 +72,7 @@ def test_band_get():
                      "name": "Fleet Foxes"}}
 
 def test_band_delete():
-    """Check if getting all bands works."""
+    """Check if deleting one band works."""
     r = requests.delete('http://localhost:8000/bands/1')
     res = json.loads(r.text)
     print res

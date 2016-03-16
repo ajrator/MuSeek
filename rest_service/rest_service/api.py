@@ -14,6 +14,17 @@ app = Flask(__name__)
 app.logger.addHandler(logging.StreamHandler(sys.stdout))
 app.logger.setLevel(logging.ERROR)
 
+@app.route('/clear', methods=['GET'])
+def clear_everything():
+    """Drop every record in the datastore.
+    Useful to ensure consistency during testing.
+    """
+    global events, bands
+    events = []
+    bands = []
+    return "All bands and events data deleted."
+
+### Band Routes ###
 
 @app.route('/bands', methods=['GET'])
 def get_bands():
@@ -33,12 +44,10 @@ def add_band():
             'name': request.json['data']['attributes']['name'],
             'imageUrl': request.json['data']['attributes']['imageUrl']
         }
-        # print band
     except KeyError:
         abort(400)
         print "NOT REACHED"
     bands.append(band)
-    print bands
     return jsonify({'band': bands[-1]}), 201
 
 @app.route('/bands/<int:band_id>', methods=['GET'])
@@ -59,6 +68,55 @@ def remove_band(band_id):
         abort(404)
     bands.remove(band[0])
     return jsonify({'bands': bands})
+
+### Event Routes ###
+
+@app.route('/events', methods=['GET'])
+def get_events():
+    """Get all the events in the datastore
+    """
+    return jsonify({'events': events})
+
+@app.route('/events', methods=['POST'])
+def add_event():
+    """Add an event to the datastore
+    """
+    try:
+        if not request.json or 'name' not in request.json['data']['attributes']:
+            abort(400)
+        event = {
+            'id': events[-1]['id'] + 1 if len(events) != 0 else 0,
+            'name': request.json['data']['attributes']['name'],
+            'start': request.json['data']['attributes']['start'],
+            'end': request.json['data']['attributes']['end'],
+            'venue': request.json['data']['attributes']['venue'],
+            # Band "foreign key"
+            'band_id': request.json['relationships']['band']['data']['id']
+        }
+    except KeyError:
+        abort(400)
+        print "NOT REACHED"
+    events.append(event)
+    return jsonify({'event': events[-1]}), 201
+
+@app.route('/events/<int:event_id>', methods=['GET'])
+def get_event(event_id):
+    """Get an event from the datastore
+    """
+    event = [event for event in events if event['id'] == event_id]
+    if len(event) == 0:
+        abort(404)
+    return jsonify({'event': event[0]})
+
+@app.route('/events/<int:event_id>', methods=['DELETE'])
+def remove_event(event_id):
+    """Remove a event from the datastore
+    """
+    event = [event for event in events if event['id'] == event_id]
+    if len(event) == 0:
+        abort(404)
+    events.remove(event[0])
+    return jsonify({'events': events})
 
 @app.route('/', methods=['POST'])
 def post():
