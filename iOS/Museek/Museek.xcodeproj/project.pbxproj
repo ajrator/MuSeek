@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		889009EB1C993C5C004ADE06 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EA1C993C5C004ADE06 /* NSDate.swift */; };
 		889009ED1C993D02004ADE06 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EC1C993D02004ADE06 /* Event.swift */; };
+		889009EF1C993E9E004ADE06 /* BadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EE1C993E9E004ADE06 /* BadgeLabel.swift */; };
 		88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */; };
 		88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */; };
 		88EFD3781C98D5C800DB8F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3761C98D5C800DB8F0D /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Museek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		889009EA1C993C5C004ADE06 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		889009EC1C993D02004ADE06 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		889009EE1C993E9E004ADE06 /* BadgeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeLabel.swift; sourceTree = "<group>"; };
 		88EFD36F1C98D5C800DB8F0D /* Museek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */,
 				88EFD3761C98D5C800DB8F0D /* Main.storyboard */,
+				889009EE1C993E9E004ADE06 /* BadgeLabel.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889009EF1C993E9E004ADE06 /* BadgeLabel.swift in Sources */,
 				889009ED1C993D02004ADE06 /* Event.swift in Sources */,
 				88EFD38A1C98D97100DB8F0D /* Band.swift in Sources */,
 				88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */,

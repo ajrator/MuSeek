@@ -61,6 +61,11 @@ class EventsViewController: UITableViewController {
         
         cell.textLabel?.text = event.band.value?.name.value
         cell.detailTextLabel?.text = "9.8 mi – Rock, metal"
+        
+        let badgeLabel = BadgeLabel()
+        badgeLabel.text = NSDateFormatter.localizedStringFromDate(event.date.value!, dateStyle: .NoStyle, timeStyle: .ShortStyle)
+        badgeLabel.sizeToFit()
+        cell.accessoryView = badgeLabel
 
         return cell
     }
