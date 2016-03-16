@@ -16,12 +16,9 @@
 		88EFD38C1C98D9A000DB8F0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38B1C98D9A000DB8F0D /* MapKit.framework */; };
 		88EFD38E1C98D9A500DB8F0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */; };
 		88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */; };
+		DED0DB976BA447D9D4186B6D /* Pods_Museek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */; };
 		FA8AF06C1C990E5E00D3DA4F /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */; };
 		FA8AF06E1C9917C800D3DA4F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06D1C9917C800D3DA4F /* API.swift */; };
-		FA8AF0701C991A2200D3DA4F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */; };
-		FA8AF0711C991A2200D3DA4F /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FA8AF0731C991F0E00D3DA4F /* ModelRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AF0721C991F0E00D3DA4F /* ModelRocket.framework */; };
-		FA8AF0741C991F0E00D3DA4F /* ModelRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FA8AF0721C991F0E00D3DA4F /* ModelRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,8 +28,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FA8AF0741C991F0E00D3DA4F /* ModelRocket.framework in Embed Frameworks */,
-				FA8AF0711C991A2200D3DA4F /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,6 +35,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Museek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EFD36F1C98D5C800DB8F0D /* Museek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88EFD3741C98D5C800DB8F0D /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +47,8 @@
 		88EFD38B1C98D9A000DB8F0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F780F8055413EC7881A7C4D5 /* Pods-Museek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Museek.release.xcconfig"; path = "Pods/Target Support Files/Pods-Museek/Pods-Museek.release.xcconfig"; sourceTree = "<group>"; };
+		F9A18E0A12ACF6984D06BC0F /* Pods-Museek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Museek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Museek/Pods-Museek.debug.xcconfig"; sourceTree = "<group>"; };
 		FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
 		FA8AF06D1C9917C800D3DA4F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
@@ -63,21 +61,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				88EFD38E1C98D9A500DB8F0D /* CoreLocation.framework in Frameworks */,
-				FA8AF0701C991A2200D3DA4F /* Alamofire.framework in Frameworks */,
-				FA8AF0731C991F0E00D3DA4F /* ModelRocket.framework in Frameworks */,
 				88EFD38C1C98D9A000DB8F0D /* MapKit.framework in Frameworks */,
+				DED0DB976BA447D9D4186B6D /* Pods_Museek.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DDD5846FD5255D557CA842A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9A18E0A12ACF6984D06BC0F /* Pods-Museek.debug.xcconfig */,
+				F780F8055413EC7881A7C4D5 /* Pods-Museek.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		88EFD3661C98D5C800DB8F0D = {
 			isa = PBXGroup;
 			children = (
 				88EFD3711C98D5C800DB8F0D /* Museek */,
 				88EFD3911C98DA1F00DB8F0D /* Frameworks */,
 				88EFD3701C98D5C800DB8F0D /* Products */,
+				3DDD5846FD5255D557CA842A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +160,7 @@
 				FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */,
 				88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */,
 				88EFD38B1C98D9A000DB8F0D /* MapKit.framework */,
+				1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,10 +180,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88EFD3811C98D5C800DB8F0D /* Build configuration list for PBXNativeTarget "Museek" */;
 			buildPhases = (
+				987E397EBA4551829640BC9B /* Check Pods Manifest.lock */,
 				88EFD36B1C98D5C800DB8F0D /* Sources */,
 				88EFD36C1C98D5C800DB8F0D /* Frameworks */,
 				88EFD36D1C98D5C800DB8F0D /* Resources */,
 				88EFD3981C99049900DB8F0D /* Embed Frameworks */,
+				69DD39434A9598D2A03D1F2A /* Embed Pods Frameworks */,
+				9E7DD05923E91244779C955C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +242,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69DD39434A9598D2A03D1F2A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Museek/Pods-Museek-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		987E397EBA4551829640BC9B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E7DD05923E91244779C955C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Museek/Pods-Museek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88EFD36B1C98D5C800DB8F0D /* Sources */ = {
@@ -351,6 +410,7 @@
 		};
 		88EFD3821C98D5C800DB8F0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A18E0A12ACF6984D06BC0F /* Pods-Museek.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -366,6 +426,7 @@
 		};
 		88EFD3831C98D5C800DB8F0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F780F8055413EC7881A7C4D5 /* Pods-Museek.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
