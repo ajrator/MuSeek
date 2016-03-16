@@ -31,6 +31,22 @@ class ShowDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func requestLyft() {
+        // If Lyft is not installed, send the user to the Apple App Store
+        let myApp = UIApplication.sharedApplication()
+        let lyftAppURL = NSURL(string: "lyft://ridetype?id=&destination[latitude]=\(0)&destination[longitude]=\(0)")!
+        
+        if myApp.canOpenURL(lyftAppURL) {
+            // Lyft is installed; launch it
+            
+            myApp.openURL(lyftAppURL)
+        } else {
+            // Lyft not installed; open App Store
+            let lyftAppStoreURL = NSURL(string: "https://itunes.apple.com/us/app/lyft-taxi-bus-app-alternative/id529379082")!
+            myApp.openURL(lyftAppStoreURL)
+        }
+    }
+    
     /*
     // MARK: - Navigation
 
