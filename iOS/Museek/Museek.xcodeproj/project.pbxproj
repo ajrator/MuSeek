@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889009EB1C993C5C004ADE06 /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889009EA1C993C5C004ADE06 /* NSDate.swift */; };
 		88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */; };
 		88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */; };
 		88EFD3781C98D5C800DB8F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3761C98D5C800DB8F0D /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Museek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		889009EA1C993C5C004ADE06 /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
 		88EFD36F1C98D5C800DB8F0D /* Museek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88EFD3741C98D5C800DB8F0D /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */,
+				889009EA1C993C5C004ADE06 /* NSDate.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */,
 				88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */,
 				FA8AF06C1C990E5E00D3DA4F /* EventDetailViewController.swift in Sources */,
+				889009EB1C993C5C004ADE06 /* NSDate.swift in Sources */,
 				FA8AF06E1C9917C800D3DA4F /* APIClient.swift in Sources */,
 				88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */,
 			);
