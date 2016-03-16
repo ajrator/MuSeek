@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */; };
-		88EFD3751C98D5C800DB8F0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3741C98D5C800DB8F0D /* ViewController.swift */; };
+		88EFD3751C98D5C800DB8F0D /* ShowsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3741C98D5C800DB8F0D /* ShowsViewController.swift */; };
 		88EFD3781C98D5C800DB8F0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3761C98D5C800DB8F0D /* Main.storyboard */; };
 		88EFD37A1C98D5C800DB8F0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD3791C98D5C800DB8F0D /* Assets.xcassets */; };
 		88EFD37D1C98D5C800DB8F0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */; };
+		88EFD38A1C98D97100DB8F0D /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD3891C98D97100DB8F0D /* Show.swift */; };
+		88EFD38C1C98D9A000DB8F0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38B1C98D9A000DB8F0D /* MapKit.framework */; };
+		88EFD38E1C98D9A500DB8F0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */; };
+		88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		88EFD36F1C98D5C800DB8F0D /* Museek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Museek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		88EFD3741C98D5C800DB8F0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		88EFD3741C98D5C800DB8F0D /* ShowsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsViewController.swift; sourceTree = "<group>"; };
 		88EFD3771C98D5C800DB8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		88EFD3791C98D5C800DB8F0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88EFD37C1C98D5C800DB8F0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		88EFD37E1C98D5C800DB8F0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88EFD3891C98D97100DB8F0D /* Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Show.swift; sourceTree = "<group>"; };
+		88EFD38B1C98D9A000DB8F0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88EFD38E1C98D9A500DB8F0D /* CoreLocation.framework in Frameworks */,
+				88EFD38C1C98D9A000DB8F0D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				88EFD3711C98D5C800DB8F0D /* Museek */,
+				88EFD3911C98DA1F00DB8F0D /* Frameworks */,
 				88EFD3701C98D5C800DB8F0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,14 +65,65 @@
 		88EFD3711C98D5C800DB8F0D /* Museek */ = {
 			isa = PBXGroup;
 			children = (
-				88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */,
-				88EFD3741C98D5C800DB8F0D /* ViewController.swift */,
-				88EFD3761C98D5C800DB8F0D /* Main.storyboard */,
+				88EFD3881C98D72800DB8F0D /* Application */,
+				88EFD3871C98D72700DB8F0D /* Model */,
+				88EFD3861C98D72600DB8F0D /* Views */,
+				88EFD3851C98D72500DB8F0D /* View Controllers */,
+				88EFD3841C98D72300DB8F0D /* Supporting Files */,
 				88EFD3791C98D5C800DB8F0D /* Assets.xcassets */,
-				88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */,
-				88EFD37E1C98D5C800DB8F0D /* Info.plist */,
 			);
 			path = Museek;
+			sourceTree = "<group>";
+		};
+		88EFD3841C98D72300DB8F0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				88EFD37E1C98D5C800DB8F0D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88EFD3851C98D72500DB8F0D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				88EFD3741C98D5C800DB8F0D /* ShowsViewController.swift */,
+				88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		88EFD3861C98D72600DB8F0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88EFD37B1C98D5C800DB8F0D /* LaunchScreen.storyboard */,
+				88EFD3761C98D5C800DB8F0D /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		88EFD3871C98D72700DB8F0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88EFD3891C98D97100DB8F0D /* Show.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		88EFD3881C98D72800DB8F0D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				88EFD3721C98D5C800DB8F0D /* AppDelegate.swift */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		88EFD3911C98DA1F00DB8F0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */,
+				88EFD38B1C98D9A000DB8F0D /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88EFD3751C98D5C800DB8F0D /* ViewController.swift in Sources */,
+				88EFD38A1C98D97100DB8F0D /* Show.swift in Sources */,
+				88EFD3751C98D5C800DB8F0D /* ShowsViewController.swift in Sources */,
 				88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */,
+				88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
