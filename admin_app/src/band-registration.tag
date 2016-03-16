@@ -1,4 +1,5 @@
 <band-registration>
+	<h2>Sign up</h2>
 	<input name="bandName", type="text" placeholder="Band Name">
 	<img name="bandImageUrl", class="profile-outline">
 	<button type="button" class="btn btn-default">Close</button>

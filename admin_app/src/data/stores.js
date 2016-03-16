@@ -1,10 +1,12 @@
 var Stores = (function(){
   var stores = {};
   
-  stores.bands = new Array;
-  stores.events = new Array;
+  stores.bands = riot.observable(new Array);
+  stores.events = riot.observable(new Array);
   stores.currentBand = 0; // index of current band
 
+  stores.events.on('update');
+  
   stores.addEvent = function (payload){
     stores.events.push(payload);
   };

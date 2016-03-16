@@ -10,7 +10,7 @@
 
 	handleSubmit() {
 		var payload = {
-			name: this.eventName.value,
+			eventName: this.eventName.value,
 			startTime: this.startTime.value,
 			endTime: this.endTime.value,
 			eventUrl: this.eventUrl.value,
@@ -18,6 +18,8 @@
 		}
 		console.log("Event Added");
 		console.log(payload);
-		parent.items.push(payload);
+		Stores.addEvent(payload);
+		Stores.events.trigger('update');
+
 	}
 </event-registration>
