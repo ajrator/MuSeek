@@ -17,9 +17,12 @@ class LocalTestData {
         "Time: 5:00PM\nCost: Free\nWebsite: sharkspartyhard.com",
         "Time: 12:00PM\nCost: Free\nWebsite: clara-nova.com/",
         "Time: 1:00AM\nCost: Free\nWebsite: holidaymountainmusic.com"]
+    var websiteName:[String] = ["carsonmchonemusic.com","sharkspartyhard.com","clara-nova.com","holidaymountainmusic.com"]
     
     var eventLat:[Double] = [30.2625758,30.270285,30.2674095,30.2594127]
-    var eventLong:[Double] = [-97.7270603,-97.7490023,-97.736059,-97.7383437]   
+    var eventLong:[Double] = [-97.7270603,-97.7490023,-97.736059,-97.7383437]
+    
+    var qrCodes:[String] = ["qr1.png","qr2.png","qr3.png","qr4.png"]
 }
 
 let localData = LocalTestData()

@@ -9,6 +9,7 @@ target 'Museek' do
 
 pod 'ModelRocket'
 pod 'Alamofire'
+pod 'Stripe'
 
 end
 

@@ -69,7 +69,38 @@ class EventDetailViewController: UIViewController {
         
         //Show annotation
         mapView.selectAnnotation(mapView.annotations[0], animated: true)
-}
+        
+        let tap = UITapGestureRecognizer(target: self, action: Selector("tapFunction:"))
+        eventDescriptionLabel.addGestureRecognizer(tap)
+        eventDescriptionLabel.userInteractionEnabled = true
+        
+        let item = UIBarButtonItem(title: "Donate", style: .Plain, target: self, action: "barButtonItemClicked:")
+        self.navigationItem.rightBarButtonItem = item
+    }
+    
+    func barButtonItemClicked(sender:UIButton!){
+        self.performSegueWithIdentifier("donateShow", sender: self);
+        
+    }
+    
+    func tapFunction(sender:UITapGestureRecognizer) {
+        performSegueWithIdentifier("webView", sender: nil)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "webView" {
+            let secondVC: WebViewController = segue.destinationViewController as! WebViewController
+            secondVC.websiteURL = localData.websiteName[eventIndex]
+            secondVC.name = localData.bandNames[eventIndex]
+            secondVC.hidesBottomBarWhenPushed = true
+        }
+        else if(segue.identifier == "donateShow"){
+            let secondVC: paymentViewController = segue.destinationViewController as! paymentViewController
+            secondVC.index = eventIndex
+            secondVC.hidesBottomBarWhenPushed = true
+        }
+    }
+
     
     private func handleAuthorizationStatus(status: CLAuthorizationStatus) {
         switch status {
