@@ -1,5 +1,15 @@
 <event-collection>
-	<h2> My Events </h2>
+	<div class="row">
+		<div class="col-lg-12 text-center">
+			<h2> My Events </h2>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg12 text-center">
+			<h3>Add an event </h3>
+			<event-registration></event-registration>
+		</div>
+	</div>
 	<ul>
 		<li each="{items}">
 			<h3>{eventName}</h3>

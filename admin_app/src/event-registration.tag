@@ -4,7 +4,6 @@
 		<input name="startTime" type="text" placeholder="Start Time">
 		<input name="endTime" type="text" placeholder="End Time">
 		<input name="eventUrl" type="text" placeholder="Event URL">
-		<button type="button" class="btn btn-default">Cancel</button>
 		<button type="button" class="btn btn-default" onclick={ handleSubmit}>Create</button>
 	</section>
 
