@@ -87,13 +87,13 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother of Dragons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYV-FE-K47">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="21.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farmhouse Rager AF 4.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he1-bS-K7c">
                                         <rect key="frame" x="0.0" y="29.5" width="560" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYe-rt-VVE">
@@ -125,6 +125,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="pdj-1p-Xz5" firstAttribute="leading" secondItem="WUV-5S-bx9" secondAttribute="leading" constant="20" id="5Pl-CR-GlH"/>
                             <constraint firstItem="pdj-1p-Xz5" firstAttribute="top" secondItem="WUV-5S-bx9" secondAttribute="top" constant="82" id="6Fb-yc-6Gn"/>
@@ -184,7 +185,7 @@
                             <constraint firstAttribute="bottom" secondItem="LS1-K8-e7l" secondAttribute="bottom" id="otK-xk-wPx"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="GTi-0U-PYj"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="map25.png" id="GTi-0U-PYj"/>
                     <navigationItem key="navigationItem" id="paC-PK-XGm"/>
                     <connections>
                         <outlet property="mapView" destination="LS1-K8-e7l" id="c3I-5f-qSQ"/>
@@ -214,7 +215,10 @@
             <point key="canvasLocation" x="-124" y="492"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="map25.png" width="25" height="25"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IgX-A7-mJa"/>
+        <segue reference="vNv-2Q-ETW"/>
     </inferredMetricsTieBreakers>
 </document>

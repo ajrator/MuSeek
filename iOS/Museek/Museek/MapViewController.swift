@@ -23,6 +23,8 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         handleAuthorizationStatus(CLLocationManager.authorizationStatus())
         
+       
+        
         timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "reloadData", userInfo: nil, repeats: true)
         timer?.fire()
     }
@@ -40,6 +42,7 @@ class MapViewController: UIViewController {
             dispatch_async(dispatch_get_main_queue()) {
                 self.mapView.removeAnnotations(self.mapView.annotations)
                 self.mapView.addAnnotations(events)
+                
             }
         }
     }
@@ -66,6 +69,7 @@ extension MapViewController: CLLocationManagerDelegate {
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currentLocation = locations.last
+        
     }
     
 }
