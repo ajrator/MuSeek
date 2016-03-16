@@ -40,5 +40,17 @@ class Event: Model {
     let URLs = PropertyArray<NSURL>(key: "urls")
     
     let band = Property<Band>(key: "band", required: true)
+
+}
+
+extension Event: MKAnnotation {
+    
+    var coordinate: CLLocationCoordinate2D {
+        return CLLocationCoordinate2D(latitude: 0, longitude: 0)
+    }
+    
+    var title: String? {
+        return name.value
+    }
     
 }
