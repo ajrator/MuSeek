@@ -19,7 +19,6 @@ class APIClient {
     func fetchEvents(location location: CLLocation, completionHandler: EventFetchCompletionHandler) {
         Alamofire.request(.GET, "", parameters: nil, encoding: .URL, headers: nil).responseJSON { response in
             completionHandler(events: [])
-            print(response)
         }
     }
     

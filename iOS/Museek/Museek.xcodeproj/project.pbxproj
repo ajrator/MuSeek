@@ -18,7 +18,7 @@
 		88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */; };
 		DED0DB976BA447D9D4186B6D /* Pods_Museek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C12CDF7ACCE403FC9BE0DCC /* Pods_Museek.framework */; };
 		FA8AF06C1C990E5E00D3DA4F /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06B1C990E5E00D3DA4F /* EventDetailViewController.swift */; };
-		FA8AF06E1C9917C800D3DA4F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06D1C9917C800D3DA4F /* API.swift */; };
+		FA8AF06E1C9917C800D3DA4F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06D1C9917C800D3DA4F /* APIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,7 +50,7 @@
 		F780F8055413EC7881A7C4D5 /* Pods-Museek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Museek.release.xcconfig"; path = "Pods/Target Support Files/Pods-Museek/Pods-Museek.release.xcconfig"; sourceTree = "<group>"; };
 		F9A18E0A12ACF6984D06BC0F /* Pods-Museek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Museek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Museek/Pods-Museek.debug.xcconfig"; sourceTree = "<group>"; };
 		FA8AF06B1C990E5E00D3DA4F /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
-		FA8AF06D1C9917C800D3DA4F /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		FA8AF06D1C9917C800D3DA4F /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		FA8AF06F1C991A2200D3DA4F /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		FA8AF0721C991F0E00D3DA4F /* ModelRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ModelRocket.framework; path = Carthage/Build/iOS/ModelRocket.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +168,7 @@
 		88EFD3921C98F3A600DB8F0D /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				FA8AF06D1C9917C800D3DA4F /* API.swift */,
+				FA8AF06D1C9917C800D3DA4F /* APIClient.swift */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 				88EFD3751C98D5C800DB8F0D /* EventsViewController.swift in Sources */,
 				88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */,
 				FA8AF06C1C990E5E00D3DA4F /* EventDetailViewController.swift in Sources */,
-				FA8AF06E1C9917C800D3DA4F /* API.swift in Sources */,
+				FA8AF06E1C9917C800D3DA4F /* APIClient.swift in Sources */,
 				88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
