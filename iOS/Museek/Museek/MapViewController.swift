@@ -19,11 +19,17 @@ class MapViewController: UIViewController {
         super.viewDidLoad()
         
         locationManager.delegate = self
-        
-        if CLLocationManager.authorizationStatus() == .NotDetermined {
-            locationManager.requestWhenInUseAuthorization()
-        } else {
+        handleAuthorizationStatus(CLLocationManager.authorizationStatus())
+    }
+    
+    private func handleAuthorizationStatus(status: CLAuthorizationStatus) {
+        switch status {
+        case .AuthorizedAlways, .AuthorizedWhenInUse:
             mapView.showsUserLocation = true
+        case .Denied, .Restricted:
+            fatalError("Location access was denied or restricted.")
+        case .NotDetermined:
+            locationManager.requestWhenInUseAuthorization()
         }
     }
 
@@ -32,14 +38,7 @@ class MapViewController: UIViewController {
 extension MapViewController: CLLocationManagerDelegate {
 
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
-        switch status {
-        case .AuthorizedAlways, .AuthorizedWhenInUse:
-            mapView.showsUserLocation = true
-        case .Denied, .Restricted:
-            fatalError("Location access was denied or restricted.")
-        case .NotDetermined:
-            manager.requestWhenInUseAuthorization()
-        }
+        handleAuthorizationStatus(status)
     }
     
 }
