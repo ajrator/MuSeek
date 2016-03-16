@@ -32,6 +32,17 @@ def findEta(toke,lat,lon):
     # print response.json()
     return response.json()
 
+
+def findCost(toke,lat,lon, elat,elon):
+    global client_auth
+    url = 'https://api.lyft.com/v1/cost?start_lat={0}&start_lng={1}&end_lat={2}&end_lng={3}'.format(lat,lon, elat,elon)
+    
+    header = {"Authorization": "Bearer {}".format(toke)}
+    response = requests.get(url, headers=header)
+    # print response.json()
+    return response.json()
+
+
 def main():
     token = get_token()
     # this does not work in the hotel 
@@ -48,10 +59,29 @@ def main():
     for ride in eta['eta_estimates']:
         group.append(ride['eta_seconds'])
 
+    lats = [30.2625758,30.270285,30.2674095,30.2594127]
+    lons = [-97.7270603,-97.7490023,-97.7360569,-97.7383437]
+
+    static_locations= zip(lats,lons)
+    formatter = ""
+    
+    # static_locations=[(30.2625758,30.270285),(30.2674095,30.2594127),(-97.7270603,-97.7490023),(-97.736059,-97.7383437)]
+    for x in static_locations:
+        cost = findCost(token,lat,lon,x[0],x[1])
+        for ride in cost['cost_estimates']:
+            formatter += "{} ${:.2f}\n".format(ride['ride_type'], ((ride['estimated_cost_cents_min']+ride['estimated_cost_cents_max'])/2.0)/100.0)
+            # formatter +=str(ride['ride_type'],"$", ((ride['estimated_cost_cents_min']+ride['estimated_cost_cents_max'])/2.0)/100.0)
+        # print "\n"
+        formatter+="\n"
+            
+        
+    
     m, s = divmod(min(group), 60)
     fastest = "Fastest ride: %02d:%02d min:sec" % (m, s)
+    formatter +=fastest
     # print fastest
-    return fastest
+    # print formatter
+    return formatter
 
 if __name__ == "__main__":
     main()

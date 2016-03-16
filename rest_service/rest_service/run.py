@@ -1,6 +1,7 @@
-import request
+import requests
 import urllib
 import json
+import rides
 
 CLIENT_ID = '82uAvOdn6kpD'
 CLIENT_SECRET = '2Xju8uFKHrqn4AaSamlcCExeQXMoVjlA'
@@ -8,6 +9,13 @@ CLIENT_SECRET = '2Xju8uFKHrqn4AaSamlcCExeQXMoVjlA'
 
 from flask import Flask
 app = Flask(__name__)
+
+
+@app.route('/api/eta')
+def eta():
+    return rides.main()
+
+
 @app.route('/')
 def homepage():
     text = '<a href="%s">Authenticate with reddit</a>'
@@ -38,14 +46,14 @@ def get_token(code):
                              auth=client_auth,
                              data=post_data)
     token_json = response.json()
-    return token_json["access_token"]re valid states in a database or memcache,
+    return token_json["access_token"] #re valid states in a database or memcache,
 # or perhaps cryptographically sign them and verify upon retrieval.
 def save_created_state(state):
     pass
 def is_valid_state(state):
     return True
 
-auth = request.auth.
+# auth = request.auth.
 
 
 # auth = requests.authhtttbasicauuth (client{id}, secret)
@@ -61,11 +69,11 @@ auth = request.auth.
 # )
 
 
-save response.json['access_token']
+# save response.json['access_token']
 
 # ^this is header for next request
 #
-headers ("ahthorization: bearrer{}".format(((access_token))
+# headers ("ahthorization: bearrer{}".format(((access_token))
     
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
