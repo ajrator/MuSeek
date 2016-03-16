@@ -21,7 +21,6 @@
 </head>
 
 <body>
-
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
@@ -215,7 +214,25 @@
             </div>
         </div>
     </aside>
-
+    <section id="band-registration" >
+        <input type="text" placeholder="Band Name">
+        <img class="profile-outline">
+        <button type="button" class="btn btn-default">Close</button>
+        <button type="button" class="btn btn-default">Sign up</button>
+    </section>
+    <section id="my-events">
+        <ul id="event-list">
+            <li v-for="event in events">{{ event.name}}</li>
+        </ul>
+    </section>
+    <section id="event-registration">
+        <input type="text" placeholder="Event Name">
+        <input type="text" placeholder="Start Time">
+        <input type="text" placeholder="End Time">
+        <input type="text" placeholder="Event URL">
+        <button type="button" class="btn btn-default">Cancel</button>
+        <button type="button" class="btn btn-default">Create</button>
+    </section>
     <!-- Footer -->
     <footer>
         <div class="container">
