@@ -105,5 +105,3 @@ flycheck_*.el
 
 # projectiles files
 .projectile
-
-flask-env/
