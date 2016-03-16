@@ -16,6 +16,7 @@
 		88EFD38C1C98D9A000DB8F0D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38B1C98D9A000DB8F0D /* MapKit.framework */; };
 		88EFD38E1C98D9A500DB8F0D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */; };
 		88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */; };
+		FA8AF06C1C990E5E00D3DA4F /* ShowDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		88EFD38B1C98D9A000DB8F0D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		88EFD38D1C98D9A500DB8F0D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				88EFD3741C98D5C800DB8F0D /* ShowsViewController.swift */,
 				88EFD38F1C98D9D900DB8F0D /* MapViewController.swift */,
+				FA8AF06B1C990E5E00D3DA4F /* ShowDetailViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 				88EFD38A1C98D97100DB8F0D /* Show.swift in Sources */,
 				88EFD3751C98D5C800DB8F0D /* ShowsViewController.swift in Sources */,
 				88EFD3731C98D5C800DB8F0D /* AppDelegate.swift in Sources */,
+				FA8AF06C1C990E5E00D3DA4F /* ShowDetailViewController.swift in Sources */,
 				88EFD3901C98D9D900DB8F0D /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +352,7 @@
 				88EFD3831C98D5C800DB8F0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

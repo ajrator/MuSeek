@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class ShowsViewController: UITableViewController {
 
     enum Filter: Int {
@@ -35,4 +36,21 @@ class ShowsViewController: UITableViewController {
     
     // MARK: - UITableViewDataSource
     
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("ShowCell", forIndexPath: indexPath)
+        
+        cell.textLabel?.text = "hi"
+        cell.detailTextLabel?.text = "Hello"
+        
+        return cell
+    }
+    
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    
 }
+
