@@ -15,6 +15,7 @@ class MapViewController: UIViewController {
     
     let locationManager = CLLocationManager()
     var currentLocation: CLLocation?
+    var timer: NSTimer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,8 @@ class MapViewController: UIViewController {
         locationManager.delegate = self
         handleAuthorizationStatus(CLLocationManager.authorizationStatus())
         
-        reloadData()
+        timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "reloadData", userInfo: nil, repeats: true)
+        timer?.fire()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -32,7 +34,7 @@ class MapViewController: UIViewController {
         }
     }
     
-    private func reloadData() {
+    func reloadData() {
         guard let location = currentLocation else { return }
         APIClient.sharedClient.fetchEvents(location: location) { events in
             dispatch_async(dispatch_get_main_queue()) {
