@@ -82,35 +82,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pdj-1p-Xz5">
-                                <rect key="frame" x="0.0" y="64" width="600" height="252.5"/>
+                                <rect key="frame" x="20" y="82" width="560" height="268.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mother of Dragons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYV-FE-K47">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="21.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="21.5"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Farmhouse Rager AF 4.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he1-bS-K7c">
-                                        <rect key="frame" x="0.0" y="29" width="600" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="29.5" width="560" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Description" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lYe-rt-VVE">
-                                        <rect key="frame" x="0.0" y="57" width="600" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="57" width="560" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-Tg-c7F">
-                                        <rect key="frame" x="0.0" y="84.5" width="600" height="128"/>
+                                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spa-Tg-c7F">
+                                        <rect key="frame" x="0.0" y="84.5" width="560" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="agc-sW-rGi"/>
                                         </constraints>
                                     </mapView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIg-6c-NE9">
-                                        <rect key="frame" x="0.0" y="220" width="600" height="32"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <rect key="frame" x="0.0" y="220.5" width="560" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="tPJ-NT-t1g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Request Lyft">
                                             <color key="titleColor" red="0.91764705882352937" green="0.043137254901960784" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
@@ -123,15 +126,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="pdj-1p-Xz5" firstAttribute="leading" secondItem="WUV-5S-bx9" secondAttribute="leading" id="5Pl-CR-GlH"/>
-                            <constraint firstItem="pdj-1p-Xz5" firstAttribute="top" secondItem="WUV-5S-bx9" secondAttribute="top" constant="64" id="6Fb-yc-6Gn"/>
-                            <constraint firstAttribute="trailing" secondItem="pdj-1p-Xz5" secondAttribute="trailing" id="MJz-rn-4cQ"/>
+                            <constraint firstItem="pdj-1p-Xz5" firstAttribute="leading" secondItem="WUV-5S-bx9" secondAttribute="leading" constant="20" id="5Pl-CR-GlH"/>
+                            <constraint firstItem="pdj-1p-Xz5" firstAttribute="top" secondItem="WUV-5S-bx9" secondAttribute="top" constant="82" id="6Fb-yc-6Gn"/>
+                            <constraint firstAttribute="trailing" secondItem="pdj-1p-Xz5" secondAttribute="trailing" constant="20" id="MJz-rn-4cQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bandNameLabel" destination="JYV-FE-K47" id="Zch-R3-5xH"/>
                         <outlet property="eventDescriptionLabel" destination="lYe-rt-VVE" id="tj0-TB-3EQ"/>
                         <outlet property="eventNameLabel" destination="he1-bS-K7c" id="zhm-o2-UvC"/>
+                        <outlet property="lyftButton" destination="rIg-6c-NE9" id="CgF-sn-AaH"/>
                         <outlet property="mapView" destination="Spa-Tg-c7F" id="O9y-eq-RBR"/>
                     </connections>
                 </viewController>

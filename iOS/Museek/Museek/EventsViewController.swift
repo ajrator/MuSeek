@@ -43,12 +43,15 @@ class EventsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         reloadData(.Time)
+        performSegueWithIdentifier("EventDetail", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "EventDetail" {
             let eventDetailViewController = segue.destinationViewController as! EventDetailViewController
-            eventDetailViewController.event = events[tableView.indexPathForSelectedRow!.row]
+            if let index = tableView.indexPathForSelectedRow?.row {
+                eventDetailViewController.event = events[index]
+            }
         }
     }
     

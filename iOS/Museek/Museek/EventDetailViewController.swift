@@ -10,11 +10,21 @@ import UIKit
 import MapKit
 
 class EventDetailViewController: UIViewController {
-
-    @IBOutlet weak var eventNameLabel: UILabel!
+    
     @IBOutlet weak var bandNameLabel: UILabel!
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var eventNameLabel: UILabel!
     @IBOutlet weak var eventDescriptionLabel: UILabel!
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var lyftButton: UIButton! {
+        didSet {
+            lyftButton.setTitleColor(.whiteColor(), forState: .Normal)
+            lyftButton.layer.backgroundColor = UIColor(red:0.92, green:0.04, blue:0.55, alpha:1.0).CGColor
+            lyftButton.layer.borderColor = UIColor(red:0.92, green:0.04, blue:0.55, alpha:1.0).CGColor
+            lyftButton.layer.borderWidth = 1
+            lyftButton.layer.cornerRadius = 8
+        }
+    }
+
     
     var event: Event? {
         didSet {
