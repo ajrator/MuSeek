@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (3.2.1)
+  - ModelRocket (1.2.4)
+  - Stripe (6.2.0):
+    - Stripe/Core (= 6.2.0)
+  - Stripe/Core (6.2.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ModelRocket
+  - Stripe
+
+SPEC CHECKSUMS:
+  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
+  ModelRocket: 1481d2d111b081cbdc9efafde5d1fe6909863b46
+  Stripe: 275524137e6c4cc1058f6d32ece248adf30a21f9
+
+COCOAPODS: 0.39.0
